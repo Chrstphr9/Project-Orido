@@ -546,7 +546,7 @@ h6 {
   color: #fdfdfd;
   font-family: var(--font-family-extra);
   font-weight: 700;
-  background-color: #6244c5;
+  background-color: #000000;
   border-radius: 16px;
   padding: 22px 40px 23px 40px;
   display: inline-block;
@@ -754,7 +754,7 @@ h6 {
   height: auto;
   clear: both;
   float: left;
-  background-color: #6244c5;
+  background-color: #000000;
   padding: 180px 0px 120px 0px;
   margin-bottom: 120px;
 }
@@ -785,7 +785,7 @@ h6 {
   position: relative;
   margin-right: -30px;
   margin-top: -95px;
-  color: #6244c5;
+  color: #000000;
   line-height: 1;
 }
 .orido_tm_about .experience {
@@ -796,7 +796,7 @@ h6 {
 }
 .orido_tm_about .name {
   font-size: 80px;
-  color: #6244c5;
+  color: #000000;
   font-weight: 700;
   letter-spacing: -4px;
   line-height: 1;
@@ -1101,7 +1101,7 @@ h6 {
   margin-bottom: 25px;
 }
 .orido_tm_informations .timelinebox .time .year {
-  color: #6244c5;
+  color: #000000;
   display: block;
   margin-bottom: 2px;
 }
