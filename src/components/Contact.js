@@ -26,7 +26,7 @@ const Contact = () => {
             </div>
             <div className="orido_tm_boxed_button">
               <a href="#">
-                Say Hello <img className="svg" src="img/svg/send.svg" alt="" />
+                Connect With Me <img className="svg" src="img/svg/send.svg" alt="" />
               </a>
             </div>
           </div>
@@ -34,18 +34,10 @@ const Contact = () => {
             <div className="left">
               <ul>
                 <li>
-                  <span className="name">Call:</span>
-                  <p>
-                    <a className="line_effect" href="#">
-                      +1 (234) 567 890
-                    </a>
-                  </p>
-                </li>
-                <li>
                   <span className="name">Email:</span>
                   <p>
                     <a className="line_effect" href="#">
-                      support@smith.com
+                    hello@rebeccanwovu.com
                     </a>
                   </p>
                 </li>
@@ -56,12 +48,12 @@ const Contact = () => {
                 <span>Follow me:</span>
                 <ul>
                   <li>
-                    <a href="#">
+                    <a href="https://www.behance.net/beccasimon1">
                       <img className="svg" src="img/svg/social/be.svg" alt="" />
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="https://dribbble.com/Nwovu-Rebecca">
                       <img
                         className="svg"
                         src="img/svg/social/dribbble.svg"
@@ -70,7 +62,7 @@ const Contact = () => {
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="https://www.instagram.com/becca.sznn?igsh=a2Y4dGlwN3hxd3Nv">
                       <img
                         className="svg"
                         src="img/svg/social/instagarm.svg"

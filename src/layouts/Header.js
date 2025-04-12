@@ -4,7 +4,7 @@ const Header = ({ dark }) => {
       <div className="header_in">
         <div className="logo">
           <a href="#">
-            <img src={`img/logo/${dark ? "light" : "logo"}.png`} alt="" />
+            <img src={`img/logo/${dark ? "light" : "logo"}.svg`} alt="" />
           </a>
         </div>
         <div className="menu">

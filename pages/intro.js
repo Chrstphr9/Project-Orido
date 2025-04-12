@@ -22,7 +22,7 @@ const Intro = () => {
           </a>
         </div>
         <div className="short_info">
-          <img src="img/logo/logo.png" alt="" />
+          <img src="img/logo/logo.svg" alt="" />
           <h3>Personal React Nextjs Portfolio Template</h3>
         </div>
         <span className="intro_line" />
