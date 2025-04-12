@@ -1,4 +1,5 @@
 import dynamic from "next/dynamic";
+import { useEffect } from "react";
 import About from "../src/components/About";
 import Blog from "../src/components/Blog";
 import Contact from "../src/components/Contact";
@@ -12,7 +13,6 @@ import Layout from "../src/layouts/Layout";
 import MobileMenu from "../src/layouts/MobileMenu";
 import Mouse from "../src/layouts/Mouse";
 import ProgressBar from "../src/layouts/ProgressBar";
-
 const Projects = dynamic(() => import("../src/components/Projects"), {
   ssr: false,
 });
@@ -20,19 +20,25 @@ const Partners = dynamic(() => import("../src/components/Partners"), {
   ssr: false,
 });
 
-const Index = () => {
+const IndexDark = () => {
+  useEffect(() => {
+    return () => {
+      document.querySelector("body").classList.add("dark");
+    };
+  }, []);
+
   return (
     <Layout>
       <MobileMenu />
-      <Header />
-      <Home />
+      <Header dark />
+      <Home dark />
       <About />
       <ExpertAreas />
       <Services />
       <Projects />
-      <Feedback />
+      <Feedback dark />
       <Blog />
-      <Partners />
+      <Partners dark />
       <Contact />
       <CopyRight />
       <Mouse />
@@ -40,4 +46,4 @@ const Index = () => {
     </Layout>
   );
 };
-export default Index;
+export default IndexDark;
