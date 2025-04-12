@@ -3,6 +3,8 @@ import dynamic from "next/dynamic";
 import Header from "../src/layouts/Header";
 import Layout from "../src/layouts/Layout";
 import MobileMenu from "../src/layouts/MobileMenu";
+import Home from "../src/components/Home";
+import About from "../src/components/About";
 
 // const Projects = dynamic(() => import("../src/components/Projects"), {
 //   ssr: false,
@@ -16,6 +18,8 @@ const Index = () => {
     <Layout>
       <MobileMenu />
       <Header />
+      <Home />
+      <About />
     </Layout>
   );
 };
