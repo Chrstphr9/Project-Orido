@@ -32,10 +32,9 @@ const Header = ({ dark }) => {
         </div>
         <div className="button">
           <a
-            href="https://themeforest.net/user/codeefly/portfolio"
-            target="_blank"
+            href="#contact"
           >
-            Purchase Now
+            Connect With Me
           </a>
         </div>
       </div>

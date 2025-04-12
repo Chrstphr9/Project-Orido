@@ -3,10 +3,10 @@ import { filter_hashtag } from "../utilits";
 import Counter from "./Counter";
 
 const counts = [
-  { name: "Trainings", value: 219 },
-  { name: "Written Book", value: 48 },
-  { name: "Listeners", value: 527 },
-  { name: "Own Projects", value: 12 },
+  { name: "Wireframes", value: 15 },
+  { name: "User Research", value: 6 },
+  { name: "UI Projects", value: 9 },
+  { name: "Protoypes", value: 3 },
 ];
 
 const skills = [

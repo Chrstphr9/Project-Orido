@@ -1,6 +1,5 @@
 import dynamic from "next/dynamic";
 import About from "../src/components/About";
-import Blog from "../src/components/Blog";
 import Contact from "../src/components/Contact";
 import ExpertAreas from "../src/components/ExpertAreas";
 import Feedback from "../src/components/Feedback";
@@ -31,7 +30,6 @@ const Index = () => {
       <Services />
       <Projects />
       <Feedback />
-      <Blog />
       <Partners />
       <Contact />
       <CopyRight />
