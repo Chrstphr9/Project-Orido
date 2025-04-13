@@ -7,7 +7,7 @@ const About = () => {
             <div className="box">
               <h3 className="year">10</h3>
               <span className="experience">Years of Experience</span>
-              <h3 className="name">John Smith</h3>
+              <h3 className="name">Rebecca Nwovu</h3>
             </div>
           </div>
           <div className="right">
