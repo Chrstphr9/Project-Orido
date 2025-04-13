@@ -5,7 +5,7 @@ const Intro = () => {
   return (
     <Layout>
       <Head>
-        <title>Orido | Intro</title>
+        <title>Rebecca Nwovu | Portfolio</title>
       </Head>
       <div className="orido_tm_intro">
         <div className="orido_tm_intro_fixed_price">
@@ -23,7 +23,7 @@ const Intro = () => {
         </div>
         <div className="short_info">
           <img src="img/logo/logo.svg" alt="" />
-          <h3>Personal React Nextjs Portfolio Template</h3>
+          <h3>Rebecca Nwovu Portfolio</h3>
         </div>
         <span className="intro_line" />
         <span className="intro_line_2" />

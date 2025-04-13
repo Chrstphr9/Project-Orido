@@ -22,7 +22,9 @@ const Layout = ({ children }) => {
   return (
     <Fragment>
       <Head>
-        <title>Orido | Home</title>
+        <title>Rebecca Nwovu | Home</title>
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" type="image/jpg" sizes="32x32" href="/favicon.jpg" />
       </Head>
       <PreLoader />
       <ImageView />
