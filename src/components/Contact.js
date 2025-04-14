@@ -82,8 +82,8 @@ const Contact = () => {
                 <div className="text">
                   <h3>{`Let's`} work together</h3>
                   <p>
-                    You can express yourself however you want and whenever you want,
-                    for free. You can customize a template or make your own.
+                  I’m always open to collaborating on meaningful, creative projects. Whether you’re building from
+                  scratch or refining an existing idea, let’s turn your vision into something real!
                   </p>
                 
                 <div className="short_info">
@@ -114,6 +114,7 @@ const Contact = () => {
                   )}
                 </div>
                 <form onSubmit={handleSubmit} className="contact_form"
+                method='POST'
                 action="https://formspree.io/f/mwplyozd"
                 >
                   <div className="form_group">

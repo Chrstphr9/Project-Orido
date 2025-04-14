@@ -17,17 +17,16 @@ const Feedback = ({ dark }) => {
             <div className="info">
               <div className="text">
                 <p>
-                  “Awesome website! Easy to use and edit, it has a lot of
-                  options to design whatever you need, it is professional and
-                  fun. I was very successful creating my profile using designer
-                  which gave me unbelievable reach &amp; appreciation.”
+                  “Working with Rebecca Nwovu was an absolute game-changer. She
+                  not only understood our vision but elevated it with fresh
+                  ideas and flawless execution”.
                 </p>
               </div>
               <div className="details">
                 <h3 className="name">
-                  <span>Albert Walkers</span>
+                  <span>Benjamin O</span>
                 </h3>
-                <span className="job">Vivaco Group</span>
+                <span className="job">Founder of Echooscar</span>
               </div>
             </div>
           </div>
