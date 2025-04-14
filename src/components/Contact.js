@@ -1,59 +1,57 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
   });
-  
+
   const [submitted, setSubmitted] = useState(false);
-  
+  const [loading, setLoading] = useState(false);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prevState => ({
+    setFormData((prevState) => ({
       ...prevState,
-      [name]: value
+      [name]: value,
     }));
   };
-  
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-  
+    setLoading(true); // show spinner
+
     try {
-      const response = await fetch('https://formspree.io/f/mwplyozd', {
-        method: 'POST',
+      const response = await fetch("https://formspree.io/f/mwplyozd", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json'
+          "Content-Type": "application/json",
         },
-        body: JSON.stringify(formData)
+        body: JSON.stringify(formData),
       });
-  
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
-      }
-  
+
+      if (!response.ok) throw new Error("Network response was not ok");
+
       const result = await response.json();
-      console.log('Form successfully submitted:', result);
-  
+      console.log("Form successfully submitted:", result);
       setSubmitted(true);
-  
-      // Reset form
+
       setFormData({
-        name: '',
-        email: '',
-        subject: '',
-        message: ''
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
       });
-  
+
       setTimeout(() => {
         setSubmitted(false);
       }, 3000);
-  
     } catch (error) {
-      console.error('Form submission error:', error);
-      // Optional: display an error message to the user
+      console.error("Form submission error:", error);
+    } finally {
+      setLoading(false); // hide spinner
     }
   };
 
@@ -71,37 +69,38 @@ const Contact = () => {
                     className="popup-youtube"
                     href="https://www.youtube.com/watch?v=7e90gBu4pas"
                   >
-                    <img
-                      className="anim_circle"
-                      src=""
-                      alt=""
-                    />
+                    <img className="anim_circle" src="" alt="" />
                     <img className="svg" src="img/svg/play.svg" alt="" />
                   </a>
                 </div>
                 <div className="text">
                   <h3>{`Let's`} work together</h3>
                   <p>
-                  I’m always open to collaborating on meaningful, creative projects. Whether you’re building from
-                  scratch or refining an existing idea, let’s turn your vision into something real!
+                    I’m always open to collaborating on meaningful, creative
+                    projects. Whether you’re building from scratch or refining
+                    an existing idea, let’s turn your vision into something
+                    real!
                   </p>
-                
-                <div className="short_info">
-                  <ul>
-                    <li>
-                      <span className="name">Email:</span>
-                      <p>
-                        <a className="line_effect" href="mailto:hello@rebeccanwovu.com">
-                          hello@rebeccanwovu.com
-                        </a>
-                      </p>
-                    </li>
-                  </ul>
-                </div>
+
+                  <div className="short_info">
+                    <ul>
+                      <li>
+                        <span className="name">Email:</span>
+                        <p>
+                          <a
+                            className="line_effect"
+                            href="mailto:hello@rebeccanwovu.com"
+                          >
+                            hello@rebeccanwovu.com
+                          </a>
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
-            
+
             {/* Right side form */}
             <div className="contact_right">
               <div className="contact_form_wrapper">
@@ -113,9 +112,11 @@ const Contact = () => {
                     </div>
                   )}
                 </div>
-                <form onSubmit={handleSubmit} className="contact_form"
-                method='POST'
-                action="https://formspree.io/f/mwplyozd"
+                <form
+                  onSubmit={handleSubmit}
+                  className="contact_form"
+                  method="POST"
+                  action="https://formspree.io/f/mwplyozd"
                 >
                   <div className="form_group">
                     <label>Name</label>
@@ -130,7 +131,7 @@ const Contact = () => {
                       className="white_text"
                     />
                   </div>
-                  
+
                   <div className="form_group">
                     <label>Email</label>
                     <input
@@ -144,7 +145,7 @@ const Contact = () => {
                       className="white_text"
                     />
                   </div>
-                  
+
                   <div className="form_group">
                     <label>Subject</label>
                     <input
@@ -158,8 +159,7 @@ const Contact = () => {
                       className="white_text"
                     />
                   </div>
-                  
-                  
+
                   <div className="form_group">
                     <label>Message</label>
                     <textarea
@@ -173,17 +173,36 @@ const Contact = () => {
                       className="white_text"
                     ></textarea>
                   </div>
-                  
+
                   <div className="form_submit">
-                    <button type="submit" className="orido_tm_button">
-                      Send Message <img className="svg" src="img/svg/send.svg" alt="" />
-                    </button>
+                    <div className="form_submit">
+                      <button
+                        type="submit"
+                        className="orido_tm_button"
+                        disabled={loading}
+                      >
+                        {loading ? (
+                          <>
+                            <span className="spinner"></span> Please wait...
+                          </>
+                        ) : (
+                          <>
+                            Send Message{" "}
+                            {/* <img
+                              className="svg"
+                              src="img/svg/send.svg"
+                              alt=""
+                            /> */}
+                          </>
+                        )}
+                      </button>
+                    </div>
                   </div>
                 </form>
               </div>
             </div>
           </div>
-          
+
           {/* Bottom section - Follow me */}
           <div className="connect">
             <div className="orido_tm_follow">
@@ -191,7 +210,11 @@ const Contact = () => {
               <ul>
                 <li>
                   <a href="https://www.behance.net/beccasimon1">
-                    <img className="svg" src="img/svg/social/be.svg" alt="Behance" />
+                    <img
+                      className="svg"
+                      src="img/svg/social/be.svg"
+                      alt="Behance"
+                    />
                   </a>
                 </li>
                 <li>
