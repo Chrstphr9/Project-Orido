@@ -24,7 +24,7 @@ const Feedback = ({ dark }) => {
               </div>
               <div className="details">
                 <h3 className="name">
-                  <span>Benjamin O</span>
+                  <span>Benjamin O.</span>
                 </h3>
                 <span className="job">Founder of Echooscar</span>
               </div>
