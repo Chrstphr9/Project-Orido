@@ -124,7 +124,7 @@ const Contact = () => {
                       name="name"
                       value={formData.name}
                       onChange={handleChange}
-                      placeholder="Your name*"
+                      placeholder="Your name"
                       required
                       className="white_text"
                     />
@@ -138,7 +138,7 @@ const Contact = () => {
                       name="email"
                       value={formData.email}
                       onChange={handleChange}
-                      placeholder="Email*"
+                      placeholder="Email"
                       required
                       className="white_text"
                     />
@@ -152,7 +152,7 @@ const Contact = () => {
                       name="subject"
                       value={formData.subject}
                       onChange={handleChange}
-                      placeholder="Subject*"
+                      placeholder="Subject"
                       required
                       className="white_text"
                     />
@@ -167,7 +167,7 @@ const Contact = () => {
                       value={formData.message}
                       onChange={handleChange}
                       rows="4"
-                      placeholder="Message*"
+                      placeholder="Message"
                       required
                       className="white_text"
                     ></textarea>
