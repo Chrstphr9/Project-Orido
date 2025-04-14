@@ -21,10 +21,12 @@ const About = () => {
             </div>
             <div className="text">
               <p>
-                With 10 years experience as a professional Web developer, I have
-                acquired the skills and knowledge necessary to make your project
-                a success. I enjoy every step of the design process, from
-                discussion and collaboration.
+                Hey there! I am Rebecca, a passionate Product Designer who loves
+                to blend simple and creative digital experience with
+                problem-solving to create products that are both functional and
+                delightful. When I'm not designing, I'm probably listening to
+                music on the beach or readingAlways curious, Always learning.
+                Let's build something amazing together!
               </p>
             </div>
             <div className="short">

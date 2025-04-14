@@ -11,56 +11,49 @@ const counts = [
 
 const skills = [
   { name: "Figma", value: 90, icon: "img/svg/figma.svg" },
-  { name: "After Effect", value: "80", icon: "img/svg/Ae.svg" },
-  { name: "Photoshop", value: "85", icon: "img/svg/photoshop.svg" },
-  { name: "XD", value: "95", icon: "img/svg/Xd.svg" },
-  { name: "Illustrator", value: "90", icon: "img/svg/illustrator.svg" },
-  { name: "Indesign", value: "75", icon: "img/svg/Id.svg" },
+  { name: "Rive", value: "75", icon: "img/svg/Ae.svg" },
+  { name: "Webflow", value: "70", icon: "img/svg/photoshop.svg" },
+  { name: "Adobe XD", value: "40", icon: "img/svg/Xd.svg" },
 ];
 
 const experiences = [
   {
-    company: "Bauen Software Inc.",
-    designation: "Product Designer",
-    time: "2021 - Present",
+    company: "Freelancing.",
+    designation: "UI/UX Designer",
+    time: "2020 - Present",
   },
   {
-    company: "Bauen Software Inc.",
-    designation: "UX Designer",
-    time: "2020 - 2021",
-  },
-  {
-    company: "Bauen Software Inc.",
+    company: "FigoAI.",
     designation: "UI Designer",
-    time: "2018 - 2020",
+    time: "2024 - 2025",
   },
   {
-    company: "Bauen Software Inc.",
-    designation: "Web Designer",
-    time: "2016 - 2018",
+    company: "Micsim Multiservices.",
+    designation: "UI/UX Designer",
+    time: "2022 - 2024",
   },
 ];
 
 const educations = [
   {
-    institution: "Stanford Univercity",
-    certificate: "Web Design Course",
-    time: "2021 - Present",
+    institution: "ZTM (Zero To Mastery)",
+    certificate: "Animation",
+    time: "2025",
   },
   {
-    institution: "Art Univercity of New York",
-    certificate: "Art Director Course",
-    time: "2020 - 2021",
+    institution: "Udemy",
+    certificate: "WebFlow",
+    time: "2024",
   },
   {
-    institution: "Amazon College",
-    certificate: "IOS Development",
-    time: "2018 - 2020",
+    institution: "Synthera Bootcamp",
+    certificate: "Product Design",
+    time: "2024",
   },
   {
-    institution: "Univercity of Texas",
-    certificate: "UX Expert",
-    time: "2017 - 2018",
+    institution: "Ebonyi State University",
+    certificate: "International Relations",
+    time: "2018 - 2022",
   },
 ];
 
@@ -90,15 +83,14 @@ const ExpertAreas = () => {
                 </div>
                 <div className="text">
                   <p>
-                    You can express yourself however you want and whenever you
-                    want, for free. You can customize a template or make your
-                    own from scratch, with an immersive library at your
-                    disposal. You can express yourself however you want and
-                    whenever you free.
+                  I specialize in creating intuitive, engaging, and visually compelling designs using
+industry-standard tools. I work mainly with Figma (to design interfaces, create seamless
+user-friendly app flows that feels real and natural to use) and Rive (to add thoughtful and subtle
+motion where it makes sense).I enjoy turning Ideas to designs that not only look good but enjoyable to use.
+
                   </p>
                   <p>
-                    You can customize a template or make your own from scratch,
-                    with an immersive library at your disposal.
+                  I enjoy turning Ideas to designs that not only look good but enjoyable to use.
                   </p>
                 </div>
                 <div className="orido_tm_boxed_button">

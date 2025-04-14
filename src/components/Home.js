@@ -6,20 +6,23 @@ const Home = ({ dark }) => {
           <div className="details">
             <div className="short">
               <h3>
-                Rebecca Nwovu <img className="svg" src="img/svg/hi.svg" alt="" />
+                Rebecca Nwovu{" "}
+                <img className="svg" src="img/svg/hi.svg" alt="" />
               </h3>
               <span className="job">Visual Designer</span>
             </div>
             <div className="text">
               <p>
-                {`I'm`} creative designer based in New York, and {`I'm`} very
-                passionate and dedicated to my work.
+                {`Hi there!`} I'm Rebecca, a curious creative and product
+                designer that is obsessed with blending simplicity with
+                creativity to craft meaningful and seamless digital experiences
+                with problem-solving solutions.
               </p>
             </div>
             <div className="buttons">
               <div className="orido_tm_boxed_button">
                 <a className="anchor" href="#contact">
-                  Say Hello{" "}
+                  Connect with me{" "}
                   <img className="svg" src="img/svg/send.svg" alt="" />
                 </a>
               </div>
