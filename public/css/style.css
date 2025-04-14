@@ -2304,6 +2304,137 @@ h6 {
   color: transparent;
 }
 
+/* Add these styles to your CSS file */
+.contact_inner {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -20px;
+}
+
+.contact_left {
+  flex: 0 0 45%;
+  max-width: 45%;
+  padding: 0 20px;
+}
+
+.contact_right {
+  flex: 0 0 55%;
+  max-width: 55%;
+  padding: 0 20px;
+}
+
+.contact_form_wrapper {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 40px;
+  height: 100%;
+}
+
+.form_title h4 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.success_message {
+  padding: 12px 15px;
+  background: rgba(39, 174, 96, 0.15);
+  border-left: 3px solid #27ae60;
+  color: #27ae60;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.form_group {
+  margin-bottom: 20px;
+}
+
+/* Base input + textarea styles */
+.form_group input,
+.form_group textarea {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 15px;
+  color: #fff !important;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+/* Prevent placeholder shift */
+.form_group input::placeholder,
+.form_group textarea::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Maintain style on focus */
+.form_group input:focus,
+.form_group textarea:focus {
+  background: rgba(255, 255, 255, 0.05) !important;
+  color: #fff !important;
+  border-color: rgba(255, 255, 255, 0.2);
+  outline: none;
+  box-shadow: none;
+}
+
+/* Fix autofill white background in Chrome/Safari */
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill:focus,
+input:-webkit-autofill:hover,
+textarea:-webkit-autofill:hover,
+input:-webkit-autofill:active,
+textarea:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0px 1000px rgba(255, 255, 255, 0.05) inset !important;
+  -webkit-text-fill-color: #fff !important;
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+label{
+  color: white
+}
+
+.form_submit {
+  margin-top: 10px;
+}
+
+.short_info {
+  margin: 25px 0;
+}
+.orido_tm_button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: var(--main-color, #f75023);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 992px) {
+  .contact_left,
+  .contact_right {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  
+  .contact_right {
+    margin-top: 40px;
+  }
+  
+  .contact_form_wrapper {
+    padding: 30px;
+  }
+}
+
+
 /*---------------------------------------------------*/
 /*	14) ORIDO COPYRIGHT
 /*---------------------------------------------------*/

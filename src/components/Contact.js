@@ -1,77 +1,217 @@
+import { useState } from 'react';
+
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: ''
+  });
+  
+  const [submitted, setSubmitted] = useState(false);
+  
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prevState => ({
+      ...prevState,
+      [name]: value
+    }));
+  };
+  
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+  
+    try {
+      const response = await fetch('https://formspree.io/f/mwplyozd', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      });
+  
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+  
+      const result = await response.json();
+      console.log('Form successfully submitted:', result);
+  
+      setSubmitted(true);
+  
+      // Reset form
+      setFormData({
+        name: '',
+        email: '',
+        subject: '',
+        message: ''
+      });
+  
+      setTimeout(() => {
+        setSubmitted(false);
+      }, 3000);
+  
+    } catch (error) {
+      console.error('Form submission error:', error);
+      // Optional: display an error message to the user
+    }
+  };
+
   return (
     <div className="orido_tm_section" id="contact">
       <div className="orido_tm_contact">
         <div className="container">
-          <div className="infobox">
-            <div className="video_button">
-              <a
-                className="popup-youtube"
-                href="https://www.youtube.com/watch?v=7e90gBu4pas"
-              >
-                <img
-                  className="anim_circle"
-                  src="img/contact/video.png"
-                  alt=""
-                />
-                <img className="svg" src="img/svg/play.svg" alt="" />
-              </a>
+          {/* Top content - Two column layout */}
+          <div className="contact_inner">
+            {/* Left side content */}
+            <div className="contact_left">
+              <div className="content_box">
+                <div className="video_button">
+                  <a
+                    className="popup-youtube"
+                    href="https://www.youtube.com/watch?v=7e90gBu4pas"
+                  >
+                    <img
+                      className="anim_circle"
+                      src=""
+                      alt=""
+                    />
+                    <img className="svg" src="img/svg/play.svg" alt="" />
+                  </a>
+                </div>
+                <div className="text">
+                  <h3>{`Let's`} work together</h3>
+                  <p>
+                    You can express yourself however you want and whenever you want,
+                    for free. You can customize a template or make your own.
+                  </p>
+                
+                <div className="short_info">
+                  <ul>
+                    <li>
+                      <span className="name">Email:</span>
+                      <p>
+                        <a className="line_effect" href="mailto:hello@rebeccanwovu.com">
+                          hello@rebeccanwovu.com
+                        </a>
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+                </div>
+              </div>
             </div>
-            <div className="text">
-              <h3>{`Let's`} work together</h3>
-              <p>
-                You can express yourself however you want and whenever you want,
-                for free. You can customize a template or make your own.
-              </p>
-            </div>
-            <div className="orido_tm_boxed_button">
-              <a href="#">
-                Connect With Me <img className="svg" src="img/svg/send.svg" alt="" />
-              </a>
+            
+            {/* Right side form */}
+            <div className="contact_right">
+              <div className="contact_form_wrapper">
+                <div className="form_title">
+                  <h4>Connect With Me</h4>
+                  {submitted && (
+                    <div className="success_message">
+                      Thank you for your message! I'll get back to you soon.
+                    </div>
+                  )}
+                </div>
+                <form onSubmit={handleSubmit} className="contact_form"
+                action="https://formspree.io/f/mwplyozd"
+                >
+                  <div className="form_group">
+                    <label>Name</label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleChange}
+                      placeholder="Your name*"
+                      required
+                      className="white_text"
+                    />
+                  </div>
+                  
+                  <div className="form_group">
+                    <label>Email</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleChange}
+                      placeholder="Email*"
+                      required
+                      className="white_text"
+                    />
+                  </div>
+                  
+                  <div className="form_group">
+                    <label>Subject</label>
+                    <input
+                      type="text"
+                      id="subject"
+                      name="subject"
+                      value={formData.subject}
+                      onChange={handleChange}
+                      placeholder="Subject*"
+                      required
+                      className="white_text"
+                    />
+                  </div>
+                  
+                  
+                  <div className="form_group">
+                    <label>Message</label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      value={formData.message}
+                      onChange={handleChange}
+                      rows="4"
+                      placeholder="Message*"
+                      required
+                      className="white_text"
+                    ></textarea>
+                  </div>
+                  
+                  <div className="form_submit">
+                    <button type="submit" className="orido_tm_button">
+                      Send Message <img className="svg" src="img/svg/send.svg" alt="" />
+                    </button>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
+          
+          {/* Bottom section - Follow me */}
           <div className="connect">
-            <div className="left">
+            <div className="orido_tm_follow">
+              <span>Follow me:</span>
               <ul>
                 <li>
-                  <span className="name">Email:</span>
-                  <p>
-                    <a className="line_effect" href="#">
-                    hello@rebeccanwovu.com
-                    </a>
-                  </p>
+                  <a href="https://www.behance.net/beccasimon1">
+                    <img className="svg" src="img/svg/social/be.svg" alt="Behance" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://dribbble.com/Nwovu-Rebecca">
+                    <img
+                      className="svg"
+                      src="img/svg/social/dribbble.svg"
+                      alt="Dribbble"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/becca.sznn?igsh=a2Y4dGlwN3hxd3Nv">
+                    <img
+                      className="svg"
+                      src="img/svg/social/instagarm.svg"
+                      alt="Instagram"
+                    />
+                  </a>
                 </li>
               </ul>
-            </div>
-            <div className="right">
-              <div className="orido_tm_follow">
-                <span>Follow me:</span>
-                <ul>
-                  <li>
-                    <a href="https://www.behance.net/beccasimon1">
-                      <img className="svg" src="img/svg/social/be.svg" alt="" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://dribbble.com/Nwovu-Rebecca">
-                      <img
-                        className="svg"
-                        src="img/svg/social/dribbble.svg"
-                        alt=""
-                      />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.instagram.com/becca.sznn?igsh=a2Y4dGlwN3hxd3Nv">
-                      <img
-                        className="svg"
-                        src="img/svg/social/instagarm.svg"
-                        alt=""
-                      />
-                    </a>
-                  </li>
-                </ul>
-              </div>
             </div>
           </div>
         </div>
