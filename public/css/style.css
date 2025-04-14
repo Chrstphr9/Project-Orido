@@ -623,6 +623,7 @@ h6 {
 .orido_tm_follow {
   display: flex;
   align-items: center;
+  margin-top: 30px;
 }
 .orido_tm_follow ul {
   margin: 0px;

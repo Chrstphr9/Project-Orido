@@ -36,17 +36,17 @@ const Home = ({ dark }) => {
           <span>Follow me:</span>
           <ul>
             <li>
-              <a href="#">
+              <a href="https://www.behance.net/beccasimon1">
                 <img className="svg" src="img/svg/social/be.svg" alt="" />
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="https://dribbble.com/Nwovu-Rebecca">
                 <img className="svg" src="img/svg/social/dribbble.svg" alt="" />
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="https://www.instagram.com/becca.sznn?igsh=a2Y4dGlwN3hxd3Nv">
                 <img
                   className="svg"
                   src="img/svg/social/instagarm.svg"
@@ -69,7 +69,7 @@ const Home = ({ dark }) => {
       <div className="avatar">
         <div className="img">
           <img src={`img/hero/${dark ? 2 : 1}.jpg`} alt="" />
-          <div className="video_button">
+          {/* <div className="video_button">
             <a
               className="popup-youtube"
               href="https://www.youtube.com/watch?v=7e90gBu4pas"
@@ -77,7 +77,7 @@ const Home = ({ dark }) => {
               <img className="anim_circle" src="img/hero/welcome.png" alt="" />
               <img className="svg" src="img/svg/play.svg" alt="" />
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
