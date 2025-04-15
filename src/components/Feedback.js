@@ -13,7 +13,7 @@ const Feedback = ({ dark }) => {
             </h3>
           </div>
           <div className="testimonials_in">
-            <img src={`img/testimonials/${dark ? 2 : 1}.jpg`} alt="" />
+            <img src={`img/testimonials/${dark ? 2 : 1}.svg`} alt="" />
             <div className="info">
               <div className="text">
                 <p>

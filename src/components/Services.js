@@ -5,28 +5,28 @@ import ServicePopup from "./popup/ServicePopup";
 const serviceData = [
   {
     name: "UI/UX Design",
-    img: "img/service/1.jpg",
+    img: "img/service/1.svg",
     description: [
       "I design clean, intuitive interfaces that not only look great but also deliver a seamless experience. My approach is rooted in empathy and functionality—I make sure users feel at home from their very first interaction.",
     ],
   },
   {
     name: "User Research",
-    img: "img/service/2.jpg",
+    img: "img/service/1.svg",
     description: [
       "I believe great design starts with understanding people. I conduct interviews, surveys, and usability tests to uncover insights that shape user-focused solutions and improve product performance.",
     ],
   },
   {
     name: "UI Animation",
-    img: "img/service/3.jpg",
+    img: "img/service/1.svg",
     description: [
       "I use subtle animations to add life and clarity to user interfaces. Whether it’s a hover effect or a complex micro-interaction, my animations help guide users and make every click feel satisfying.",
     ],
   },
   {
     name: "Product Design",
-    img: "img/service/4.jpg",
+    img: "img/service/1.svg",
     description: [
       "From the first sketch to the final prototype, I design products that solve real problems and bring ideas to life. I focus on functionality, consistency, and delight—turning concepts into experiences people love.",
     ],

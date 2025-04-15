@@ -7,7 +7,7 @@ const About = () => {
         <div className="about_in">
           <div className="left">
             <div className="box">
-              <h3 className="year">3</h3>
+              <h3 className="year">3+</h3>
               <span className="experience">Years of Experience</span>
               <h3 className="name">Rebecca Nwovu</h3>
             </div>
@@ -27,7 +27,7 @@ const About = () => {
                 to blend simple and creative digital experience with
                 problem-solving to create products that are both functional and
                 delightful. When I'm not designing, I'm probably listening to
-                music on the beach or readingAlways curious, Always learning.
+                music on the beach or reading. Always curious, Always learning.
                 Let's build something amazing together!
               </p>
             </div>

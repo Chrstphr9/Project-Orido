@@ -13,8 +13,8 @@ const counts = [
 
 const skills = [
   { name: "Figma", value: 90, icon: "img/svg/figma.svg" },
-  { name: "Rive", value: "75", icon: "img/svg/Ae.svg" },
-  { name: "Webflow", value: "70", icon: "img/svg/photoshop.svg" },
+  { name: "Rive", value: "75", icon: "img/svg/rive.svg" },
+  { name: "Webflow", value: "70", icon: "img/svg/webflow.svg" },
   { name: "Adobe XD", value: "40", icon: "img/svg/Xd.svg" },
 ];
 
