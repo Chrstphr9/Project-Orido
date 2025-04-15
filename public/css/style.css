@@ -599,6 +599,9 @@ h6 {
 .line_effect {
   display: inline-block;
   position: relative;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
 }
 .line_effect:after {
   content: "";
@@ -2405,6 +2408,9 @@ label{
 
 .short_info {
   margin: 25px 0;
+
+  font-weight: 400;
+  font-size: 20px;
 }
 .orido_tm_button {
   display: inline-block;

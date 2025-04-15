@@ -1,3 +1,5 @@
+import { AiFillLinkedin } from "react-icons/ai";
+
 const About = () => {
   return (
     <div className="orido_tm_section" id="about">
@@ -5,7 +7,7 @@ const About = () => {
         <div className="about_in">
           <div className="left">
             <div className="box">
-              <h3 className="year">10</h3>
+              <h3 className="year">3</h3>
               <span className="experience">Years of Experience</span>
               <h3 className="name">Rebecca Nwovu</h3>
             </div>
@@ -31,12 +33,12 @@ const About = () => {
             </div>
             <div className="short">
               <div className="orido_tm_boxed_button">
-                <a href="img/cv/1.jpg" download>
-                  Download CV{" "}
-                  <img className="svg" src="img/svg/paper.svg" alt="" />
+                <a href="https://www.linkedin.com/in/rebecca-nwovu-6007a7239" 
+                target="_blank">
+                  My Linkedin
+                  <AiFillLinkedin className="svg" />
                 </a>
               </div>
-              <img src="img/signature.png" alt="" />
             </div>
           </div>
         </div>

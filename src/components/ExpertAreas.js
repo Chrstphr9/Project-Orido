@@ -85,21 +85,27 @@ const ExpertAreas = () => {
                 </div>
                 <div className="text">
                   <p>
-                  I specialize in creating intuitive, engaging, and visually compelling designs using
-industry-standard tools. I work mainly with Figma (to design interfaces, create seamless
-user-friendly app flows that feels real and natural to use) and Rive (to add thoughtful and subtle
-motion where it makes sense).I enjoy turning Ideas to designs that not only look good but enjoyable to use.
-
+                    I specialize in creating intuitive, engaging, and visually
+                    compelling designs using industry-standard tools. I work
+                    mainly with Figma (to design interfaces, create seamless
+                    user-friendly app flows that feels real and natural to use)
+                    and Rive (to add thoughtful and subtle motion where it makes
+                    sense).I enjoy turning Ideas to designs that not only look
+                    good but enjoyable to use.
                   </p>
                   <p>
-                  I enjoy turning Ideas to designs that not only look good but enjoyable to use.
+                    I enjoy staying updated with industry trends and turning
+                    Ideas to designs that not only look good but
+                    enjoyable to use.
                   </p>
                 </div>
                 <div className="orido_tm_boxed_button">
-                  <a href="https://www.linkedin.com/in/rebecca-nwovu-6007a7239
-                  " target="_blank">
-                    My Linkedin{" "}
-                    <AiFillLinkedin className="svg" />
+                  <a
+                    href="https://www.linkedin.com/in/rebecca-nwovu-6007a7239
+                  "
+                    target="_blank"
+                  >
+                    My Linkedin <AiFillLinkedin className="svg" />
                   </a>
                 </div>
               </div>

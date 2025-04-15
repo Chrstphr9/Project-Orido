@@ -9,10 +9,6 @@ const CopyRight = () => {
             </div>
             <div className="copy">
               <p>
-                © {new Date().getFullYear()} by{" "}
-                <a href="https://themeforest.net/user/codeefly" target="_blank">
-                  Codeefly.
-                </a>{" "}
                 All Rights Reserved
               </p>
             </div>

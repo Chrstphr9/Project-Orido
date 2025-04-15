@@ -209,7 +209,8 @@ const Contact = () => {
               <span>Follow me:</span>
               <ul>
                 <li>
-                  <a href="https://www.behance.net/beccasimon1">
+                  <a href="https://www.behance.net/beccasimon1"
+                    target="_blank">
                     <img
                       className="svg"
                       src="img/svg/social/be.svg"
@@ -218,7 +219,8 @@ const Contact = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="https://dribbble.com/Nwovu-Rebecca">
+                  <a href="https://dribbble.com/Nwovu-Rebecca"
+                  target="_blank">
                     <img
                       className="svg"
                       src="img/svg/social/dribbble.svg"
@@ -227,7 +229,8 @@ const Contact = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.instagram.com/becca.sznn?igsh=a2Y4dGlwN3hxd3Nv">
+                  <a href="https://www.instagram.com/becca.sznn?igsh=a2Y4dGlwN3hxd3Nv"
+                  target="_blank">
                     <img
                       className="svg"
                       src="img/svg/social/instagarm.svg"
