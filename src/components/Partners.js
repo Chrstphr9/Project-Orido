@@ -6,10 +6,6 @@ const partnersLogo = {
     "img/partners/2.svg",
     "img/partners/3.svg",
     "img/partners/4.svg",
-    "img/partners/1.svg",
-    "img/partners/6.png",
-    "img/partners/7.png",
-    "img/partners/8.png",
   ],
   dark: [
     "img/partners/light/1.svg",
