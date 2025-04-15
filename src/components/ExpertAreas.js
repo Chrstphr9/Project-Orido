@@ -25,7 +25,7 @@ const experiences = [
     time: "2020 - Present",
   },
   {
-    company: "FigoAI.",
+    company: "FigoAILabs.",
     designation: "UI Designer",
     time: "2024 - 2025",
   },
@@ -189,14 +189,18 @@ const ExpertAreas = () => {
                           <li key={i}>
                             <div className="list_inner">
                               <div className="time">
-                                <span className="year">{experience.time}</span>
+                                <span className="year">
+                                  {experience.time}
+                                  </span>
                                 <span className="company">
                                   {experience.company}
                                 </span>
                               </div>
                               <div className="job">
                                 <h3>
-                                  <span>{experience.designation}</span>
+                                  <span>
+                                    {experience.designation}
+                                    </span>
                                 </h3>
                               </div>
                             </div>

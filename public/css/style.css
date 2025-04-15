@@ -1120,7 +1120,7 @@ h6 {
   display: inline-block;
   position: relative;
 }
-.orido_tm_informations .timelinebox .job span:before {
+/* .orido_tm_informations .timelinebox .job span:before {
   position: absolute;
   content: "";
   width: 20px;
@@ -1128,7 +1128,7 @@ h6 {
   background-color: var(--main-color);
   top: -10px;
   left: 0px;
-}
+} */
 .orido_tm_informations .orido_tm_boxed_button a .svg path {
   fill: #fff;
 }
@@ -3203,6 +3203,8 @@ label{
     align-items: baseline;
     justify-content: flex-start;
   }
+
+  
   .orido_tm_service .service_list .right .arrow {
     display: none;
   }
@@ -3332,12 +3334,13 @@ label{
     width: 50%;
   }
   .orido_tm_informations .timelinebox ul {
-    margin-left: 0px;
+    margin-left: 10px;
   }
   .orido_tm_informations .timelinebox ul li {
     width: 100%;
     padding-left: 0px;
   }
+  
   .orido_tm_counter .counter_list ul li {
     width: 50%;
   }
