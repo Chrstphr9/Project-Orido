@@ -12,7 +12,7 @@ const serviceData = [
   },
   {
     name: "User Research",
-    img: "img/service/1.svg",
+    img: "img/service/2.png",
     description: [
       "I believe great design starts with understanding people. I conduct interviews, surveys, and usability tests to uncover insights that shape user-focused solutions and improve product performance.",
     ],

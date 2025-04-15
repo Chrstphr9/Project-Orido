@@ -489,11 +489,11 @@ h6 {
 }
 .orido_tm_hero .details {
   width: 50%;
-  /* padding-right: 50px; */
+  padding-right: 50px;
   margin-top:140px
 }
 .orido_tm_hero .short {
-  margin-bottom: 32px;
+  margin-bottom:32px;
 }
 .orido_tm_hero .short h3 {
   font-size: 80px;
@@ -622,7 +622,7 @@ h6 {
 }
 .orido_tm_hero .orido_tm_follow {
   position: relative;
-  bottom: 120px;
+  bottom: 10px;
 }
 .orido_tm_follow {
   display: flex;
