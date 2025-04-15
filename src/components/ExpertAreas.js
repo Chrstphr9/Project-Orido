@@ -1,4 +1,6 @@
 import { Fragment, useEffect, useState } from "react";
+import { AiFillLinkedin } from "react-icons/ai";
+
 import { filter_hashtag } from "../utilits";
 import Counter from "./Counter";
 
@@ -94,9 +96,10 @@ motion where it makes sense).I enjoy turning Ideas to designs that not only look
                   </p>
                 </div>
                 <div className="orido_tm_boxed_button">
-                  <a href="#">
-                    My Resume{" "}
-                    <img className="svg" src="img/svg/paper.svg" alt="" />
+                  <a href="https://www.linkedin.com/in/rebecca-nwovu-6007a7239
+                  " target="_blank">
+                    My Linkedin{" "}
+                    <AiFillLinkedin className="svg" />
                   </a>
                 </div>
               </div>

@@ -9,14 +9,16 @@ const Home = ({ dark }) => {
                 Rebecca Nwovu{" "}
                 <img className="svg" src="img/svg/hi.svg" alt="" />
               </h3>
-              <span className="job">Visual Designer</span>
+              <span className="job">Product Designer</span>
             </div>
             <div className="text">
               <p>
-                {`Hi there!`} I'm Rebecca, a curious creative and product
-                designer that is obsessed with blending simplicity with
-                creativity to craft meaningful and seamless digital experiences
-                with problem-solving solutions.
+                {`Hi I'm Rebecca`} — a curious and creative product designer
+                passionate about crafting intuitive and impactful digital
+                experiences. I blend simplicity with innovation to design
+                solutions that solve real problems. From building user-friendly
+                apps to creating interactive prototypes, I leverage design tools
+                and AI to bring ideas to life.
               </p>
             </div>
             <div className="buttons">

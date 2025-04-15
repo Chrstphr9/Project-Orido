@@ -22,7 +22,15 @@ const Layout = ({ children }) => {
   return (
     <Fragment>
       <Head>
-        <title>Rebecca Nwovu | Home</title>
+        <title>Rebecca Nwovu – Creative Product Designer | Seamless Digital Experiences</title>
+        <meta 
+          name="description" 
+          content="Hi, I'm Rebecca – a product designer blending creativity and simplicity to craft seamless digital experiences. I build apps, create prototypes, and solve problems using AI and design tools." 
+        />
+        <meta 
+          name="keywords" 
+          content="Rebecca, product designer, creative designer, UX UI designer, digital product design, app design, AI designer, prototype designer, user experience, user interface, design portfolio" 
+        />
         <link rel="icon" href="/favicon.ico" />
         <link rel="icon" type="image/jpg" sizes="32x32" href="/favicon.jpg" />
       </Head>

@@ -6,7 +6,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <Fragment>
   <Head>
-    <title>Rebecca Nwovu | Home</title>
+    <title>ebecca Nwovu – Creative Product Designer | Seamless Digital Experiences</title>
     <link rel="icon" href="/favicon.ico" />
     <link rel="icon" type="image/jpg" sizes="32x32" href="/favicon.jpg" />
     
