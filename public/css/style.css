@@ -489,7 +489,7 @@ h6 {
 }
 .orido_tm_hero .details {
   width: 50%;
-  padding-right: 50px;
+  /* padding-right: 50px; */
 }
 .orido_tm_hero .short {
   margin-bottom: 32px;
@@ -1267,7 +1267,7 @@ h6 {
 }
 .orido_tm_service .service_list .number {
   display: inline-block;
-  color: #6244c5;
+  color: #000000;
   font-size: 24px;
   font-family: var(--font-family-extra);
 
@@ -1334,7 +1334,7 @@ h6 {
   fill: #fff;
 }
 .orido_tm_service .service_list ul li.mleave .number {
-  color: #6244c5;
+  color: #000000;
 }
 .orido_tm_service .service_list ul li.mleave .title {
   color: var(--main-color);
@@ -2514,7 +2514,7 @@ label{
   width: 6px;
   height: 6px;
   z-index: 100;
-  background-color: #6244c5;
+  background-color: #000000;
   -webkit-transition: width 0.3s ease-in-out, height 0.3s ease-in-out,
     margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
   transition: width 0.3s ease-in-out, height 0.3s ease-in-out,
@@ -2533,7 +2533,7 @@ label{
   margin-top: -15px;
   width: 30px;
   height: 30px;
-  border: 2px solid #6244c5;
+  border: 2px solid #000000;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   z-index: 100;
@@ -2828,7 +2828,7 @@ label{
     left: 60px;
   }
   .orido_tm_hero .orido_tm_follow {
-    bottom: 60px;
+    bottom: 10px;
   }
   .orido_tm_follow ul li a {
     width: 50px;
