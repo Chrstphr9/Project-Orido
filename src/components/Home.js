@@ -1,3 +1,5 @@
+import { AiFillLinkedin } from "react-icons/ai";
+
 const Home = ({ dark }) => {
   return (
     <div className="orido_tm_hero orido_tm_section" id="home">
@@ -53,13 +55,9 @@ const Home = ({ dark }) => {
               </a>
             </li>
             <li>
-              <a href="https://www.instagram.com/becca.sznn?igsh=a2Y4dGlwN3hxd3Nv"
+              <a href="https://www.linkedin.com/in/rebecca-nwovu-6007a7239"
               target="_blank">
-                <img
-                  className="svg"
-                  src="img/svg/social/instagarm.svg"
-                  alt=""
-                />
+                <AiFillLinkedin className="svg" color="black" />
               </a>
             </li>
           </ul>

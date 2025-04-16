@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { AiFillLinkedin } from "react-icons/ai";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -229,13 +230,9 @@ const Contact = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.instagram.com/becca.sznn?igsh=a2Y4dGlwN3hxd3Nv"
+                  <a href="https://www.linkedin.com/in/rebecca-nwovu-6007a7239"
                   target="_blank">
-                    <img
-                      className="svg"
-                      src="img/svg/social/instagarm.svg"
-                      alt="Instagram"
-                    />
+                    <AiFillLinkedin className="svg" color="black" />
                   </a>
                 </li>
               </ul>
